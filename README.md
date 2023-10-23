@@ -8,7 +8,7 @@ http://127.0.0.1:8000/api/stores/phone_number/
 
 http://127.0.0.1:8000/api/visits/create/phone_number/
 
-# Запуск
+## Запуск
 
 1. Клонируем репозиторий на локальный компьютер 
 
