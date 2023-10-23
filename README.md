@@ -2,11 +2,11 @@
 
 Приложение может получать список торговых точек. Пример GET запроса:
 
-http://127.0.0.1:8000/api/stores/<phone_number>/
+http://127.0.0.1:8000/api/stores/phone_number/
 
 А также выполнить посещение в торговую точку POST:
 
-http://127.0.0.1:8000/api/visits/create/<phone_number>/
+http://127.0.0.1:8000/api/visits/create/phone_number/
 
 # Запуск
 
@@ -37,3 +37,4 @@ docker exec -it <id container or name> createsuperuser
 ```
 
 Приложение готов к работе
+
