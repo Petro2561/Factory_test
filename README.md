@@ -36,7 +36,7 @@ docker-compose up
 docker exec -it <id container or name> createsuperuser
 ```
 
-Приложение готов к работе!
+Приложение готово к работе!
 
 ## Использованные технологии:
 - Python 3.10
