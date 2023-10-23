@@ -13,7 +13,7 @@ http://127.0.0.1:8000/api/visits/create/<phone_number>/
 1. Клонируем репозиторий на локальный компьютер 
 
 ```
-$ docker-compose up
+git clone https://github.com/Petro2561/Factory_test.git
 ```
 
 2. Создаем .env файл в корневой директории
@@ -29,9 +29,11 @@ DB_PORT=5432
 
 3. Запускаем контейнеры (Предполагается, что у вас установлен докер)
 ```
-$ docker-compose up
+docker-compose up
 ```
 4. Создаем суперюзера
 ```
 docker exec -it <id container or name> createsuperuser
 ```
+
+Приложение готов к работе
