@@ -1,5 +1,3 @@
-from api.utils import get_store_by_id, get_worker_by_phone
-from django.core.validators import RegexValidator
 from rest_framework import serializers
 from visits.models import Store, Visit
 

@@ -1,13 +1,15 @@
+from rest_framework.generics import ListAPIView, CreateAPIView
 from api.serizlizers import (
     StoreSerializer,
     VisitCreateSerializer,
     VisitResponseSerializer,
 )
-from api.utils import get_store_by_id, get_worker_by_phone
-from rest_framework import status
-from rest_framework.generics import CreateAPIView, ListAPIView
-from rest_framework.response import Response
+
+
 from visits.models import Store, Visit
+from api.utils import get_worker_by_phone
+from rest_framework.response import Response
+from rest_framework import status
 
 
 class StoreList(ListAPIView):
@@ -23,7 +25,6 @@ class VisitCreate(CreateAPIView):
 
     def create(self, request, *args, **kwargs):
         store_id = request.data.get("store")
-        # get_store_by_id(self)
         if not Store.objects.filter(
             id=store_id, worker=get_worker_by_phone(self).id
         ).exists():
