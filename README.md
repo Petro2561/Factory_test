@@ -36,5 +36,12 @@ docker-compose up
 docker exec -it <id container or name> createsuperuser
 ```
 
-Приложение готов к работе
+Приложение готов к работе!
+
+## Использованные технологии:
+- Python 3.10
+- Django 4.2.6
+- Django REST framework 3.14
+- Docker
+- Postgres
 
